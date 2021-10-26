@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --green: #17E7A4;
+    --red: #e73617;
+    --blue: #6bb5df;
+    --white: #F6F1F1;
+    --yellow: #E0D909;
+    --grey: #7D7474;
+    --black: #363636;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(269deg, #3c27e9, #96c4c7);
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items:center;
+}
+@media screen and (max-width: 780px) {
+    header {
+        height: 15vh;
+    }
+}
+
+header h1 {
+    font-size: 5vw;
+    padding-left: 2%;
+    font-family: 'Montserrat';
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--red);
+    text-shadow:  5px 5px var(--green);
+}
+@media screen and (max-width: 780px) {
+    header h1 {
+        font-size: 9vw;
+    }
+}
+
+.form-section {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+@media screen and (max-width: 780px) {
+    .form-section {
+        height: 80vh;
+    }
+}
+
+form {
+    width: 20%;
+    height: 80%;
+    -webkit-box-shadow: 0px 0px 10px 2px var(--blue);
+    -moz-box-shadow: 0px 0px 10px 2px var(--blue);
+    box-shadow: 0px 0px 10px 2px var(--blue); 
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width: 780px) {
+    form {
+        width: 80%;
+        height: 70%;
+    }
+}
+
+form label {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 780px) {
+    form label {
+        font-size: 5vw;
+    }
+}
+
+form input[type=text] {
+    width: 100%;
+    font-size: 1.5vw;
+    border-style: none;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 5%;
+    margin: -10px 0 -10px 0;
+}
+@media screen and (max-width: 780px) {
+    form input[type=text] {
+        font-size: 7vw;
+    }
+}
+
+form input[type=submit] {
+    border-style: none;
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Montserrat';
+    /* font-weight: bold; */
+    color: var(--green);
+    background-image: linear-gradient(269deg, #3c27e9, #96c4c7);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+form input[type=submit]:hover {
+    box-shadow: 0 0 15px var(--blue);
+    cursor: pointer;
+}
+@media screen and (max-width: 780px) {
+    form input[type=submit] {
+        font-size: 7vw;
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.result-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
+    .result-section {
+        height: 80vh;
+    }
+}
+
+.result-section div {
+    -webkit-box-shadow: 0px 0px 10px 2px var(--green);
+    -moz-box-shadow: 0px 0px 10px 2px var(--green);
+    box-shadow: 0px 0px 10px 2px var(--green); 
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media screen and (max-width: 780px) {
+    .result-section div {
+        width: 80%;
+    }
+}
+
+.result-section div p:first-child {
+    text-align: center;
+}
+
+.result-section div p {
+    font-size: 2vw;
+    font-family: sans-serif;
+    padding-left: 3%;
+}
+@media screen and (max-width: 780px) {
+    .result-section div p {
+        font-size: 5vw;
+    }
+}
+
+.result-section div p span {
+    float: right;
+    padding-right: 3%;
+}
+
+footer {
+    background-image: linear-gradient(26deg, #5748d6, #96c4c7);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
+    footer {
+        height: 5vh;
+    }
+}
+
+footer h1 {
+    text-align: right;
+    font-size: 1.5vw;
+    font-family: 'Source Code Pro';
+}
+@media screen and (max-width: 780px) {
+    footer h1 {
+        font-size: 3vw;
+    }
+}
+
+footer h1 span {
+    font-size: 2vw;
+    color:rgb(0, 255, 234);
+}
+@media screen and (max-width: 780px) {
+    footer h1 span {
+        font-size: 4vw;
+    }
+}
+
+footer h1 a {
+    color: black;
+}

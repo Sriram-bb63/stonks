@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\static\css\main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>stonks</title>
+</head>
+<body>
+    <header>
+        <h1>Stonks calculator</h1>
+    </header>
+
+    <section class="form-section">
+        <form method="post" autocomplete="off">
+            <label for="bp">Buy Price: </label><br>
+            <input type="text" id="bp" name="bp" placeholder=""><br>
+            <label for="bq">Buy Quantity: </label><br>
+            <input type="text" id="bq" name="bq" placeholder=""><br>
+            <label for="sp">Sell Price: </label><br>
+            <input type="text" id="sp" name="sp" placeholder=""><br>
+            <label for="sq">Sell Quantity: </label><br>
+            <input type="text" id="sq" name="sq" placeholder=""><br>
+            <input type="submit" value="Calculate">
+        </form>
+    </section>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <h1>Made with <span>&heartsuit;</span> by <a href="http://Sriram-bb63.github.io" _target="blank">Sriram Vasudevan</a></h1>
+    </footer>
+
+</body>
+</html>

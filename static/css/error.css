@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+:root {
+    --green: #17E7A4;
+    --red: #e73617;
+    --blue: #6bb5df;
+    --white: #F6F1F1;
+    --yellow: #E0D909;
+    --grey: #7D7474;
+    --black: #363636;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(269deg, #3c27e9, #96c4c7);
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items:center;
+}
+@media screen and (max-width: 780px) {
+    header {
+        height: 15vh;
+    }
+}
+
+header h1 {
+    font-size: 5vw;
+    padding-left: 2%;
+    font-family: 'Montserrat';
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--red);
+    text-shadow:  5px 5px var(--green);
+}
+@media screen and (max-width: 780px) {
+    header h1 {
+        font-size: 9vw;
+    }
+}
+
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
+    section {
+        height: 85vh;
+    }
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid blueviolet;
+    width: 50%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 10px 2px var(--red);
+    -moz-box-shadow: 0px 0px 10px 2px var(--red);
+    box-shadow: 0px 0px 10px 2px var(--red); 
+}
+@media screen and (max-width: 780px) {
+    section div {
+        width: 80%;
+    }
+}
+
+section div img {
+    width: 8vw;
+    margin: 2% 0%;
+}
+@media screen and (max-width: 780px) {
+    section div img {
+        width: 20vw;
+    }
+}
+
+section div h1 {
+    width: fit-content;
+    font-size: 4vw;
+    color: var(--red);
+    background-color: var(--yellow);
+}
+@media screen and (max-width: 780px) {
+    section div h1 {
+        font-size: 8vw;
+    }
+}
+
+section div p {
+    margin-left: 5%;
+    font-size: 2.5vw;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 780px) {
+    section div p {
+        font-size: 6vw;
+    }
+}
+
+section div ul {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 780px) {
+    section div ul {
+        font-size: 5vw;
+    }
+}
+
+section div a {
+    background-image: linear-gradient(269deg, #3c27e9, #96c4c7);
+    font-size: 2vw;
+    padding: 0% 2%;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: var(--green);
+    -webkit-box-shadow: 0px 0px 10px 2px var(--blue);
+    -moz-box-shadow: 0px 0px 10px 2px var(--blue);
+    box-shadow: 0px 0px 10px 2px var(--blue);
+    transition: .25s;
+}
+section div a:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width: 780px) {
+    section div a {
+        font-size: 8vw;
+    }
+}
+
+footer {
+    background-image: linear-gradient(26deg, #5748d6, #96c4c7);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 780px) {
+    footer {
+        height: 5vh;
+    }
+}
+
+footer h1 {
+    text-align: right;
+    font-size: 1.5vw;
+    font-family: 'Source Code Pro';
+}
+@media screen and (max-width: 780px) {
+    footer h1 {
+        font-size: 3vw;
+    }
+}
+
+footer h1 span {
+    font-size: 2vw;
+    color:rgb(0, 255, 234);
+}
+@media screen and (max-width: 780px) {
+    footer h1 span {
+        font-size: 4vw;
+    }
+}
+
+footer h1 a {
+    color: black;
+}

@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+<section class="result-section" id="result-section">
+    <div>
+        <p>It is a <b>{{ results[0] }}</b></p>
+        <p>Total buy price: <span>&#x20b9; {{ results[2] }}</span></p>
+        <p>Total sell price: <span>&#x20b9; {{ results[3] }}</span></p>
+        <hr>
+        <p>{{ results[1] }} per share: <span>&#x20b9; {{ results[5] }}</span></p>
+        <p>Total {{ results[1] }}: <span>&#x20b9; {{ results[4] }}</span></p>
+        <!-- <p>{{ results[1] }} per share: <span>&#x20b9; {{ results[2] }}</span></p> -->
+        <p>{{ results[1] }} (in percentage): <span>{{ results[6] }}%</span></p>
+        <p>Value of invested 1rs now: <span>&#x20b9; {{ results[7] }}</span></p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+    <!-- <link rel="stylesheet" href="\static\css\error.css"> -->
+    <title>stonks</title>
+</head>
+<body>
+    <header>
+        <h1>Stonks calculator</h1>
+    </header>
+    
+    <section>
+        <div>
+            <img src="{{url_for('static', filename='/images/error.png')}}" alt="error!"/>
+            <!-- <img src="/static/images/error.png" alt=""> -->
+            <h1>Error!</h1>
+            <br>
+            <p>Your input must contain only:</p>
+            <ul>
+                <li>Numbers</li>
+                <li>Positive numbers</li>
+                <li>Only positive numbers</li>
+                <li>and nothing else!</li>
+            </ul>
+            <br>
+            <a href={{ url_for("index") }}>Home</a>
+            <br>
+        </div>
+    </section>
+
+    <footer>
+        <h1>Made with <span>&heartsuit;</span> by <a href="http://Sriram-bb63.github.io" _target="blank">Sriram Vasudevan</a></h1>
+    </footer>
+</body>
+</html>
